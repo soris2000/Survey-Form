@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Innovation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">App Innovation</h1>
+        <p id="description" class="description">
+          ¡Present your project to the world!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age" id="number-label">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            class="form-control"
+            placeholder="Age"
+            min="15"
+            max="50"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Sex</p>
+          <label class="input-radio">
+            <input type="radio" name="user-sex" value="male" checked />
+            Male
+          </label>
+          <label class="input-radio">
+            <input type="radio" name="user-sex" value="female" />
+            Female
+          </label>
+          <label class="input-radio">
+            <input type="radio" name="user-sex" value="other" />
+            Other
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>APPS - Development for</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option value="" selected>Please choose</option>
+            <option value="blackBerry">BlackBerry world</option>
+            <option value="google-play">Google play</option>
+            <option value="console">Console development (Xbox,PSP)</option>
+            <option value="app-store">App Store</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Category in which you consider your application is located
+            <span class="clue">(Check all that apply).</span>
+          </p>
+
+          <label class="input-checkbox"
+            ><input
+              name="category"
+              value="entertainment"
+              type="checkbox"
+            />Entertainment</label
+          >
+          <label class="input-checkbox">
+            <input
+              name="category"
+              value="social"
+              type="checkbox"
+            />Social</label
+          >
+          <label class="input-checkbox"
+            ><input
+              name="category"
+              value="utilities-and-productivity"
+              type="checkbox"
+            />Utilities and productivity</label
+          >
+          <label class="input-checkbox"
+            ><input
+              name="category"
+              value="educational-and-informative"
+              type="checkbox"
+            />Educational and informative</label
+          >
+          <label class="input-checkbox"
+            ><input
+              name="category"
+              value="Creation-apps"
+              type="checkbox"
+            />Creation apps</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Why you want to participate?</p>
+          <textarea
+            id="answer"
+            class="input-textarea"
+            name="answer"
+            placeholder="Enter your answer here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+      <footer><p>
+        &copy 2021 Daniel Soriano Grande | All rights reserved.
+    </p>
+     </footer>
+    </div>
+    <!--Container-->
+   
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
