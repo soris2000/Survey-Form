@@ -1,0 +1,99 @@
+
+:root{
+    --color-white:#ffffff;
+    --color-green:#2da751;
+    --color-blue:#17559c;
+    --color-blueDark:#2c3e50;
+}
+body{
+    background:var(--color-blue,green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:18px;
+}
+.container{
+    margin: 0 auto;
+    text-align:center;
+    color: var(--color-white,white); 
+    width: 100%;
+}
+.header{
+    padding:10px;
+}
+#title{
+    font-weight:bold;
+    margin: 0px;
+}
+#description{
+    font-style: italic;
+    margin-top: 5px;
+}
+
+#survey-form{
+    background-color:var(--color-blueDark,black);
+    margin: 0 auto;
+    border-radius:10px;
+    text-align:left;
+   padding:30px;
+   width:85%;
+}
+.form-group{
+     margin-bottom: 20px;
+ }
+#name-label,#email-label,#number-label{
+    display:block;
+    margin-bottom: 2px;
+}
+#name,#email,#number{
+    font-size:18px;
+    width: 100%;
+    border-radius:5px;
+}
+.input-radio,.input-checkbox{
+    display: block;
+}
+p{
+    margin-bottom:4px;
+}
+#dropdown{
+    width:100%;
+    font-size:18px;
+    padding: 0;
+    border-radius:5px;
+}
+.input-textarea{
+    border-radius:5px;
+    font-size:18px;
+    width: 100%;
+}
+
+.submit-button{
+background:var(--color-green,pink);
+color: var(--color-white,white);
+width:100%;
+padding:1rem;
+border-radius:10px;
+font-size:18px;
+font-weight: bold;
+}
+.submit-button:hover{
+    background:var(--color-blue,blue);
+    border-color: var(--color-white,white);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer p{ 
+    font-size:15px;  
+    padding: 20px;
+}
+
+@media (min-width: 600px){
+    #survey-form{
+        max-width: 560px;;
+    }  
+}
+
+
+
